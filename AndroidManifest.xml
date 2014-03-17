@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="tw.instartit.app.autowificgu"
+    android:versionCode="8"
+    android:versionName="1.04" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="15" 
+        />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />	
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_white"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity android:name="SettingActivity" android:theme="@android:style/Theme.Black">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="AutoLoginActivity" android:enabled="true">
+            <intent-filter>
+            	<action android:name="android.net.wifi.STATE_CHANGE"/>
+            	<action android:name="tw.instartit.app.autowificgu.LOGIN_SUCCESS"/>
+            	<action android:name="tw.instartit.app.autowificgu.LOGIN_FAIL"/>
+            	<action android:name="tw.instartit.app.autowificgu.ACTION_MANUAL_LOGIN"/>
+            	<action android:name="android.net.wifi.supplicant.CONNECTION_CHANGE"/>
+            	<action android:name="android.net.wifi.supplicant.CONNECTION_CHANGE"/>
+            	
+            </intent-filter>
+        </receiver>
+        <service android:name="AuthService">
+            <intent-filter>
+                <action android:name="tw.instartit.app.autowificgu.LOGIN_MAIL"/>
+                <action android:name="tw.instartit.app.autowificgu.LOGIN_USER"/>
+                <action android:name="tw.instartit.app.autowificgu.LOGOUT"/>
+            </intent-filter>
+        </service>
+        <activity android:name="ReadmeActivity" android:theme="@android:style/Theme.Black"></activity>
+
+      	
+    </application>
+
+</manifest>

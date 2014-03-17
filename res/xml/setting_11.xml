@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="設定頁面">
+		
+    <PreferenceCategory android:title="主設定">
+        <SwitchPreference android:key="autologin_enable" android:title="自動登入" android:summary="是否啟用自動登入"/>
+        <SwitchPreference android:key="toast_enable" android:title="提示視窗" android:summary="是否在自動登入時顯示提示視窗，手動登入則不受限制。"/>
+        <ListPreference android:title="修改認證方式"
+            			android:key="method"
+            			android:entries="@array/method" 
+            			android:entryValues="@array/method_value" android:defaultValue="mailauth"/>
+        
+    </PreferenceCategory>
+	
+    <PreferenceCategory android:title="以訪客登入" >
+        <EditTextPreference android:title="修改信箱" android:key="mail" android:defaultValue="defaut@mail" android:summary="登入信箱"/>
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="以帳密登入" android:selectable="false">
+        <EditTextPreference android:title="更改帳號" android:key="user" android:defaultValue="default@stmail.cgu.edu.tw" android:summary="信箱帳號"/>
+        <EditTextPreference android:title="更改密碼" android:key="pass" android:summary="信箱密碼"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="其他">
+        <Preference android:title="手動登入網路" android:key="login" />
+    	<Preference android:title="登出網路" android:key="logout" />
+    	<Preference android:title="程式說明 " android:key="readme"/>
+    </PreferenceCategory>
+    
+    
+</PreferenceScreen>

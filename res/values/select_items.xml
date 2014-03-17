@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="method">
+        <item>使用帳密登入</item>
+        <item>使用訪客登入</item>        
+    </string-array>
+        <string-array name="method_value">
+        <item>userpass</item>
+        <item>mailauth</item>        
+    </string-array>
+</resources>
