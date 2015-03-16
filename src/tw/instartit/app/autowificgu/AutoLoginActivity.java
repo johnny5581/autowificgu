@@ -17,7 +17,7 @@ public class AutoLoginActivity extends BroadcastReceiver{
 
 	private static final String STATE_CHANGE = "android.net.wifi.STATE_CHANGE";
 	public  static final String LOGIN_MANUAL = "tw.instartit.app.autowificgu.ACTION_MANUAL_LOGIN";
-	public  static final String DEFAULT_SSID = "cgu-wlan";
+	public  static final String DEFAULT_SSID = "TANetRoaming";
 	private static final String PREFIX_ENABLE = "autologin_enable";
 	private static final String PREFIX_METHOD = "method";
 	public  static final String PREFIX_ACTION = "preaction";
