@@ -4,7 +4,7 @@
     <string name="app_name">長庚大學無線網路自動登入</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-    <string name="readme">本程式僅供長庚大學內部使用，無線網路名稱必須為 cgu-wlan 才會有效果。\n\n若對程式有任何疑問或是指教，請至Google Play上詢問或來信告知。</string>
-    <string name="auther">By NagiYamazaki</string>
+    <string name="readme">本程式僅在長庚大學內使用，無線網路名稱需為 TANetRoaming 才會有效果。\n\n若對程式有任何疑問或是指教，請至Google Play上詢問或來信告知。\n\n作者現在不在長庚也不在台灣，而且作者已經快要畢業了（應該啦），所以更新速度可能不會那麼頻繁，很有可能會漏掉什麼，屆時請在來信告知，謝謝。 \nm(_ _)m\n\n</string>
+    <string name="auther">By 資管小魯蛇 Yu-Jung Lin (B9744249, M0144010)</string>
 
 </resources>
